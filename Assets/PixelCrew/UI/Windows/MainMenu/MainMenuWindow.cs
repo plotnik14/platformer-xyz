@@ -13,6 +13,11 @@ namespace PixelCrew.UI.Windows.MainMenu
         {
             WindowUtils.CreateWindow("UI/SettingsWindow");
         }
+        
+        public void OnShowCreators()
+        {
+            WindowUtils.CreateWindow("UI/CreatorsWindow");
+        }
 
         public void OnStartGame()
         {
