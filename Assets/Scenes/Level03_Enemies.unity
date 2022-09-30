@@ -1259,11 +1259,11 @@ MonoBehaviour:
   _useLocalization: 0
   _oneTimeDialog: 1
   _boundDialog:
+    _type: 1
     Sentences:
     - _value: It's time for an advanced range attack.. If you have diamonds of course..
       _icon: {fileID: 21300000, guid: 09f271819b800a94fa9bc277ed2601fb, type: 3}
       _side: 1
-    _type: 1
   _externalDialog: {fileID: 0}
   _onComplete:
     m_PersistentCalls:
