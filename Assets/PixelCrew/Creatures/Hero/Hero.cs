@@ -53,7 +53,7 @@ namespace PixelCrew.Creatures.Hero
         private bool _allowDoubleJump;
         private GameSession _session;
         private bool _isMultiThrow;
-        private HealthComponent _healthComponent;
+        private HeroHealthComponent _healthComponent;
         private float _speedMod;
         private LightSourceComponent _lightComponent;
         private CameraShakeEffect _cameraShake;
@@ -99,7 +99,7 @@ namespace PixelCrew.Creatures.Hero
             base.Awake();
 
             _playerInput = GetComponent<PlayerInput>();
-            _healthComponent = GetComponent<HealthComponent>();
+            _healthComponent = GetComponent<HeroHealthComponent>();
             _allowDoubleJump = true;
             _isMultiThrow = false;
             _speedMod = 1;
@@ -125,7 +125,7 @@ namespace PixelCrew.Creatures.Hero
             _session = GameSession.Instance;
             _cameraShake = FindObjectOfType<CameraShakeEffect>();
 
-            var health = GetComponent<HealthComponent>();
+            var health = GetComponent<HeroHealthComponent>();
             _session.Data.Inventory.OnChange += OnInventoryChanged;
 
             _session.StatsModel.OnUpgraded += OnHeroUpgraded;
