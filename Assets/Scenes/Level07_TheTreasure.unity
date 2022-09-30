@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1613,6 +1613,12 @@ PrefabInstance:
 --- !u!4 &385907267 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5295528582907728703, guid: 6df314e043b92034aaf5377b9d3a045b,
+    type: 3}
+  m_PrefabInstance: {fileID: 385907266}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &385907268 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5295528582842217490, guid: 6df314e043b92034aaf5377b9d3a045b,
     type: 3}
   m_PrefabInstance: {fileID: 385907266}
   m_PrefabAsset: {fileID: 0}
@@ -5018,6 +5024,7 @@ GameObject:
   - component: {fileID: 1121990834}
   - component: {fileID: 1121990835}
   - component: {fileID: 1121990836}
+  - component: {fileID: 1121990837}
   m_Layer: 0
   m_Name: EnterCutScene
   m_TagString: Untagged
@@ -5080,6 +5087,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1121990835}
         m_MethodName: SetInput
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1121990837}
+        m_MethodName: Play
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5172,6 +5190,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _objectToDestroy: {fileID: 1121990830}
+--- !u!114 &1121990837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121990830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b470c52ce3b40cfa0083401841d5eba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _clip: {fileID: 8300000, guid: 8f3bf940244df9c4eb44e4539d51c92f, type: 3}
+  _source: {fileID: 385907268}
 --- !u!1001 &1180713029
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12268,10 +12300,8 @@ MonoBehaviour:
   _spawnOnEnable: 1
   _count: 40
   _drop:
-  - Drop: {fileID: 1638338923199578499, guid: 5823fa85c839c8c4988fd7eebefbd130, type: 3}
-    Probability: 70
   - Drop: {fileID: 3053771660399256709, guid: daff884e98c65eb4fb3cb8bbda9f3eca, type: 3}
-    Probability: 30
+    Probability: 100
   _onDropCalculated:
     m_PersistentCalls:
       m_Calls:
@@ -12793,6 +12823,7 @@ GameObject:
   - component: {fileID: 2134099014}
   - component: {fileID: 2134099013}
   - component: {fileID: 2134099015}
+  - component: {fileID: 2134099016}
   m_Layer: 13
   m_Name: GoblinKing
   m_TagString: Enemy
@@ -12992,6 +13023,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2134099016}
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _onChange:
     m_PersistentCalls:
       m_Calls: []
@@ -13084,6 +13126,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _hp: {fileID: 2134099011}
   _animator: {fileID: 2134099008}
+--- !u!114 &2134099016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2134099005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b470c52ce3b40cfa0083401841d5eba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _clip: {fileID: 8300000, guid: fe7759eee83af59479a686ae9eae5d0d, type: 3}
+  _source: {fileID: 385907268}
 --- !u!1001 &1330607260065648027
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using PixelCrew.Model;
+﻿using PixelCrew.Model;
 using PixelCrew.Model.Definition;
 using PixelCrew.Model.Definition.Repositories;
 using PixelCrew.Utils.Disposables;

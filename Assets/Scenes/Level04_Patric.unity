@@ -2720,6 +2720,26 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &752635262 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1025799270, guid: d0820a51ec37a5742a3438f3ad5c482b,
+    type: 3}
+  m_PrefabInstance: {fileID: 8330356933438674571}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &752635263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752635262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b470c52ce3b40cfa0083401841d5eba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _clip: {fileID: 8300000, guid: fe7759eee83af59479a686ae9eae5d0d, type: 3}
+  _source: {fileID: 104540174}
 --- !u!1 &778744046
 GameObject:
   m_ObjectHideFlags: 0
@@ -5591,6 +5611,7 @@ GameObject:
   - component: {fileID: 1121990834}
   - component: {fileID: 1121990835}
   - component: {fileID: 1121990836}
+  - component: {fileID: 1121990837}
   m_Layer: 0
   m_Name: EnterCutScene
   m_TagString: Untagged
@@ -5642,6 +5663,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1121990835}
         m_MethodName: SetInput
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1121990837}
+        m_MethodName: Play
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5734,6 +5766,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _objectToDestroy: {fileID: 1121990830}
+--- !u!114 &1121990837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121990830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b470c52ce3b40cfa0083401841d5eba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _clip: {fileID: 8300000, guid: 8f3bf940244df9c4eb44e4539d51c92f, type: 3}
+  _source: {fileID: 104540174}
 --- !u!1 &1126502185
 GameObject:
   m_ObjectHideFlags: 0
@@ -21086,6 +21132,34 @@ PrefabInstance:
       propertyPath: _floodAnimator
       value: 
       objectReference: {fileID: 786494057}
+    - target: {fileID: 958555981, guid: d0820a51ec37a5742a3438f3ad5c482b, type: 3}
+      propertyPath: _onDie.m_PersistentCalls.m_Calls.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 958555981, guid: d0820a51ec37a5742a3438f3ad5c482b, type: 3}
+      propertyPath: _onDie.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 958555981, guid: d0820a51ec37a5742a3438f3ad5c482b, type: 3}
+      propertyPath: _onDie.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 752635263}
+    - target: {fileID: 958555981, guid: d0820a51ec37a5742a3438f3ad5c482b, type: 3}
+      propertyPath: _onDie.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 958555981, guid: d0820a51ec37a5742a3438f3ad5c482b, type: 3}
+      propertyPath: _onDie.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 958555981, guid: d0820a51ec37a5742a3438f3ad5c482b, type: 3}
+      propertyPath: _onDie.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 958555981, guid: d0820a51ec37a5742a3438f3ad5c482b, type: 3}
+      propertyPath: _onDie.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1025799272, guid: d0820a51ec37a5742a3438f3ad5c482b, type: 3}
       propertyPath: _onComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
