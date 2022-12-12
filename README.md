@@ -3,7 +3,7 @@
 2D platformer about a pirate that is looking for a treasure. The game is a final work of Unity course of XYZ school.
 
 **Platform:** PC (, Android, WebGL)  
-**Engine:** Unity
+**Engine:** Unity 2019.4
 ### Gameplay Video
 [YouTube](https://youtu.be/l0xrb2JOxwo)
   
